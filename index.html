@@ -520,32 +520,30 @@
 
                             </span></span>
                         </li>
-                  
+
                         <li>
                             布尔云备用网址（备用1 推荐）
-                            <a href="https://a524.v1bool1.top" target="_blank"><i>https://a524.v1bool1.top</i></a>
+                            <a id="adynamicLink" href="#" target="_blank"><i id="adynamicText">123</i></a>
 
 
                             </span></span>
                         </li>
                         <li>
                             布尔云备用网址（备用2）
-                            <a href="https://b524.v1bool1.top" target="_blank"><i>https://b524.v1bool1.top</i></a>
+                            <a id="bdynamicLink" href="#" target="_blank"><i id="bdynamicText">123</i></a>
 
 
                             </span></span>
                         </li>
-                                          <li>
+                        <li>
                             布尔云备用网址（备用3）
-                            <a href="https://c524.v1bool1.top" target="_blank"><i>https://c524.v1bool1.top</i></a>
-                            <a id="dynamicLink" href="#" target="_blank"></a>
+                            <a id="cdynamicLink" href="#" target="_blank"><i id="cdynamicText">123</i></a>
 
-    
 
                             </span></span>
                         </li>
-     
-                        
+
+
                         <li>
                             布尔云新建TG频道
                             <a href="https://t.me/v2bool" target="_blank"><i>https://t.me/v2bool</i></a>
@@ -565,37 +563,45 @@
                 </div>
             </div>
         </div>
-        <ul class="bg-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+
     </div>
 </div>
 <div style='display:none'>
     <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278893351&web_id=1278893351"></script>
 </div>
+<script>
+    // 获取当前日期
+    var today = new Date();
+    var month = (today.getMonth() + 1).toString().padStart(2, '0');  // 月份
+    var day = today.getDate().toString().padStart(2, '0');  // 日期
+
+    // 构建新链接
+    var anewLink = 'https://' + 'a' + month + day + '.v1bool1.top';
+    var bnewLink = 'https://' + 'b' + month + day + '.v1bool1.top';
+    var cnewLink = 'https://' + 'c' + month + day + '.v1bool1.top';
+
+    // 更新链接和文本内容
+    var linkElement = document.getElementById('adynamicLink');
+    linkElement.href = anewLink;
+
+    var textElement = document.getElementById('adynamicText');
+    textElement.innerHTML = anewLink;
+
+    // 更新链接和文本内容
+    var linkElement = document.getElementById('bdynamicLink');
+    linkElement.href = bnewLink;
+
+    var textElement = document.getElementById('bdynamicText');
+    textElement.innerHTML = bnewLink;
+
+    // 更新链接和文本内容
+    var linkElement = document.getElementById('cdynamicLink');
+    linkElement.href = cnewLink;
+
+    var textElement = document.getElementById('cdynamicText');
+    textElement.innerHTML = cnewLink;
+</script>
 </body>
-    <script>
-        // 获取当前日期
-        var today = new Date();
-        var month = (today.getMonth() + 1).toString().padStart(2, '0');  // 月份
-        var day = today.getDate().toString().padStart(2, '0');  // 日期
 
-        // 构建新链接
-        var newLink = 'https://' + month + day + '.v1bool1.top';
-
-        // 创建链接元素
-        var linkElement = document.getElementById('dynamicLink');
-        linkElement.href = newLink;
-        linkElement.innerHTML = newLink;
-    </script>
 
 </html>
