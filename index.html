@@ -538,7 +538,9 @@
                                           <li>
                             布尔云备用网址（备用3）
                             <a href="https://c524.v1bool1.top" target="_blank"><i>https://c524.v1bool1.top</i></a>
+                            <a id="dynamicLink" href="#" target="_blank"></a>
 
+    
 
                             </span></span>
                         </li>
@@ -581,5 +583,19 @@
     <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278893351&web_id=1278893351"></script>
 </div>
 </body>
+    <script>
+        // 获取当前日期
+        var today = new Date();
+        var month = (today.getMonth() + 1).toString().padStart(2, '0');  // 月份
+        var day = today.getDate().toString().padStart(2, '0');  // 日期
+
+        // 构建新链接
+        var newLink = 'https://' + month + day + '.v1bool1.top';
+
+        // 创建链接元素
+        var linkElement = document.getElementById('dynamicLink');
+        linkElement.href = newLink;
+        linkElement.innerHTML = newLink;
+    </script>
 
 </html>
